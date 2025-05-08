@@ -3107,6 +3107,20 @@
             "nondeterministic_output"
         ]
     },
+    "CLUSTER SLOT-STATS": {
+        "summary": "Return an array of slot usage statistics for slots assigned to the current node.",
+        "since": "8.2.0",
+        "group": "cluster",
+        "complexity": "O(N) where N is the total number of slots based on arguments. O(N*log(N)) with ORDERBY subcommand.",
+        "arity": -4,
+        "command_flags": [
+            "loading",
+            "stale"
+        ],
+        "hints": [
+            "nondeterministic_output"
+        ]
+    },
     "COMMAND": {
         "summary": "Returns detailed information about all commands.",
         "since": "2.8.13",
